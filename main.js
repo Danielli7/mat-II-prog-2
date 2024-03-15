@@ -1,2 +1,11 @@
 const botoes = querySelectorAll(".botao"); 
-console.log(botoes); 
+
+for(let i=0; i<botoes.length; 1++){
+    botoes[i].onclick = function(){
+        for (j=0; j< botoes.length; j++) {
+            botoes[j].classlist.remove("ativo");
+        }
+        botoes[i].classlist.add("ativo")
+    
+    }
+}
