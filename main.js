@@ -33,10 +33,11 @@ function calculaTempo(tempoObjetivo) {
     if (tempoFinal > 0) {
         return dias + " dias " + horas + " horas " + minutos + " minutos " + segundos + " segundos";
     } else {
-        return "Prazo Finalizado";
+        return [0,0,0,0];
     }
 }
 function atualizaCronometro(){
+    document.getElementById("dias0").textContent = calculaTempo(tempo[0][0]]);
     for (let i=0; i<contadores.length;i++){
         contadores[i].textContent = calculaTempo(tempos[i]);
     }
