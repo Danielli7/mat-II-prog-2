@@ -79,17 +79,16 @@ body {
     font-size: 28px;
     text-align: center;
 }
-
 .aba-conteudo-titulo-secundario{
     text-align: center;
     color: var(--verde);
     text-transform: uppercase;
 }
 .contador{
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-} 
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
 .contador-digito{
     padding: 0 16px;
     text-align: center;
@@ -104,6 +103,7 @@ body {
     font-size: 20px;
     margin: 0;
 }
+
 
 
 @media screen and (min-width: 768px) {
